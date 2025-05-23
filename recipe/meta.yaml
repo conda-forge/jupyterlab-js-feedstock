@@ -6,12 +6,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/jupyterlab_js-{{ version }}.post2.tar.gz
-  sha256: bce57b2bec0cca389c6db2d14a286ed26a2ce476b10418a7ebb22ef87c4c9f89
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/jupyterlab_js-{{ version }}.post3.tar.gz
+  sha256: 15b5e2ef527df964e802aefb9e4d53b0b76f93cfbf25e0612a7ae972877177fa
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
