@@ -1,17 +1,17 @@
 {% set name = "jupyterlab-js" %}
-{% set version = "4.4.2" %}
+{% set version = "4.4.5" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.post4.tar.gz
-  sha256: 4bf401584cfb8c35563d2056bbf9a182929afcd24e1dcc53c0bf3ff361a0251b
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: f7a3e3466714c5ed4a85ba7f2c6542a44b1b633b4aae04638247f5edca3613ed
 
 build:
   noarch: python
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
