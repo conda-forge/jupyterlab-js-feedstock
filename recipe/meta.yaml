@@ -1,5 +1,5 @@
 {% set name = "jupyterlab-js" %}
-{% set version = "4.6.1" %}
+{% set version = "4.6.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: e55cd728aa6dfb73887e63e99441694d36b9ae071cf5857825a19255dd42a8f3
+  sha256: 79e0fc50b56e8ab8b818967f83a6ca70ed85874915d51359b6f9b1a6bf089e53
 
 build:
   noarch: python
